@@ -1,0 +1,137 @@
+.t1{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    /* height:100%; Set a fixed height */
+    /* object-fit: cover; Maintain aspect ratio */
+    /* display: block; We dont't need this now as we'll directly utilise the space inside of the thumb div
+    width: 300px; */
+    /* display: block;
+    object-fit: cover; */
+}
+.video_title{
+    display: inline-block; /*To make para an inline element from box element*/ 
+    /* vertical-align: top; */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;/*For the spacing between the texts*/
+    margin-bottom: 10px;
+    margin-top: 0;
+    /* vertical-align: top; */
+}
+.video_author,.video_views{
+    color: rgb(96, 96, 96);
+    font-size: 15px;
+    height: 20px;
+    /* display: inline-block;
+    display: inline-block; /*Though <p> arae alredy a block element
+    margin-bottom: 4px;
+    vertical-align: top;
+    
+    width:200px;  Included it in the p{} */
+}
+.video_author{
+    margin-bottom: 4px;
+}
+/* up{
+    /* display: inline-block; 
+    margin-bottom: 5px;
+    display: inline-block;
+    /* vertical-align: top; 
+    color: rgb(96, 96, 96);
+    font-size: 15px;
+} */
+
+.div-video{
+    width: 422px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+}
+
+/* .div-video{
+    /* display: inline-block; /*As div is a block element and we can add elements beside it
+    width: 300px; 
+    /* vertical-align: top; 
+    /* margin-right: 5px; 
+} */
+
+/* .channel_pic{
+    object-fit: contain;
+    width: 50px;
+    vertical-align: top; /*To align it with the info
+} */
+/* .video_info{
+} */
+.profile_pict{
+    width: 36px;/*100%*/
+    border-radius: 50px;
+}
+.thumbnail-space{
+    margin-bottom: 8px;
+    position: relative;
+    height: 238px;
+    /* height: 190px; */
+}
+
+.video_info_grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    height: 100px;
+}
+
+.video_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 35px;
+    /* text-decoration: underline; */
+    /* font-family: Roboto, Arial; it's now inside body */
+}
+.video_title{
+    height: 44px;
+}
+
+@media (max-width: 600px){
+    .video_grid{
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+    }
+}
+@media(min-width:751px) and (max-width:999px){
+    .video_grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px){
+    .video_grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 2px;
+}
+
+.time_stamp{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    /* font-family: Roboto,arial; */
+    font-size: 12px;
+    font-weight: 500px;
+    /* padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px; */
+    /*padding: 4px 10px;Shortcut- top&bottom left&right*/
+    /*padding: 4px 10px 4px 5px; clockwise order*/
+    padding: 4px;
+    border-radius: 2px;
+}

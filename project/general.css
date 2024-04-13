@@ -1,0 +1,19 @@
+p{
+    font-family: Roboto,Arial;/**/
+    margin-bottom: 0;
+    margin-top: 0;
+}
+body{
+    /* color: red; As we said the body colour to red, 
+    not all the elements turn to red as there is a CSS specificity.
+    An individual element. Having the colour won't change. As its following a certain priority order. */
+    margin: 0;
+    font-family: Roboto,Arial;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 23px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    width: 1401.600;
+    height: 8379.100;
+}
